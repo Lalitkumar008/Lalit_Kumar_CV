@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- linking css -->
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <!-- navbar -->
+  <div class="main">
+    <div class="navbar">
+        <div class="nav-icon">
+            <a href="/"><img class="logo-img" src="./assets/logoLK.png" alt=""></a>
+        </div>
+        <div class="nav-elements ">
+            <!-- <ul class="nav-elements-ul">
+                <li><a class="menu-item" id="menu-item1" href="">home</a></li>
+                <li><a class="menu-item" href="#about-me">about</a></li>
+                <li><a class="menu-item" href="#skills-container">Portfolio</a></li>
+                <li><a class="menu-item" href="#contact-parent">Contact</a></li>
+                <a href="./assets/LalitKumarResume12_2023.pdf" download="resume_lalit_kumar" id="resume-btn">Resume
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+
+            </ul> -->
+            <i id="hemburger" class="fa-solid fa-bars"></i>
+        </div>
+    
+    </div>
+        <!-- sidebar -->
+        <div class="sidebar ">
+            
+            <ul class="nav-elements-ul">
+                <!-- <li><a class="menu-item" id="menu-item1" href="">.Home()</a></li> -->
+                
+                <li><a class="menu-item" href="#about-me">.About()</a></li>
+                <li><a class="menu-item" href="#project-container">.Portfolio()</a></li>
+                <li><a class="menu-item" href="#skills-container">.skills()</a></li>
+                <li><a class="menu-item" href="#contact-parent">.Contact()</a></li>
+                <li>
+                    <a href="./assets/LalitKumarResume12_2023.pdf" download="resume_lalit_kumar" id="resume-btn">.Resume()
+                        <!-- <span><i class="fa-solid fa-chevron-down"></i></span> -->
+                    </a>
+                </li>
+               
+        
+            </ul>
+    <i onclick="close()" class="fa-solid fa-xmark cross-menu"></i>
+        </div>
+    <!-- hero-section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1 class="">Hi,</h1>
+            <h1 class="">I'm <span style="color: #1dffff;">Lalit Kumar</span>,</h1>
+            <h1 class="">Software Developer</h1>
+            <p>Looking Towards Every Opportunity Where I Get The Chance To Be Creative And Design A Site That Leaves A
+                Lasting
+                Impression</p>
+            <div id="line-divider"></div>
+            <button id="take-btn">TAKE A LOOK</button>
+        </div>
+        <!-- <div class="hero-img"> -->
+        <!-- <img class="hero-img" src="./assets/hero-img.webp" alt=""> -->
+        <img class="hero-img" src="https://i.pinimg.com/736x/ca/5e/1b/ca5e1bfe922da583525dcc2def4ac893.jpg" alt="">
+        <!-- </div> -->
+    </div>
+    
+    <!-- about me section -->
+    <section id="about-me">
+        <div class="about-me-left">
+            <!-- <img src="./assets/about-me-img.webp" alt=""> -->
+            <h2>About Myself</h2>
+            <p>
+                Hello, I'm Lalit Kumar, full stack web developer based in New Delhi, India. I am an Information Technology(IT)
+                student,
+                currently pursuing my Bachelor's at USICT Dwarka, New Delhi.
+            </p>
+            <p>I am fasinated by technology and really enjoy development. Web Development being my area of expertise, I have worked
+                on
+                many personal projects. Apart from being a Web Developer I have been involed in other domains
+                like UI/UX and UI animations.</p>
+            <!-- <p>Web development</p> -->
+            <!-- <p>Problem solving</p> -->
+        </div>
+    
+        <div class="about-me-text">
+            <div class="about-me-t1">
+                <h5 id="about-me-t1-green">ABOUT ME</h5>
+                <h3>Here's A Little Bit About Myself</h3>
+                <p class="about-me-grey-text">In everything that I do, I make sure to put in hard work and perseverance into
+                    all aspects of my life. While also at the same time using tools that come from a diverse cultural
+                    background through traveling and learning multiple languages to create something clients love.</p>
+            </div>
+    
+            <div class="about-me-t2">
+                <div class="t2-inner-text">
+                    <i aria-hidden="true" class="fas fa-laptop"></i>
+                    <div>
+                        <h5>Web Design</h5>
+                        <p class="about-me-grey-text">Experience collaborating with clients to design multi-page websites
+                            with a variety of
+                            different animations.</p>
+                    </div>
+                </div>
+                <div class="t2-inner-text">
+                    <i aria-hidden="true" class="fas fa-mobile"></i>
+                    <div>
+                        <h5>Mobile Responsiveness</h5>
+                        <p class="about-me-grey-text">Experience collaborating with clients to create websites that adjust
+                            to both tablet and
+                            mobile.</p>
+                    </div>
+                </div>
+                <div class="t2-inner-text">
+                    <i class="fa-brands fa-creative-commons-nd"></i>
+                    <div>
+                        <h5>Full Stack</h5>
+                        <p class="about-me-grey-text">works in both frontend and backend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- projects section -->
+    <section id="project-container">
+        <div class="project-heading">
+            <h1>My portfolio</h1>
+        </div>
+    
+        <div class="project-parent">
+            <!-- project 1 -->
+            <div class="projects " id="project-1">
+                <!-- <img src="./assets/exercise.png" alt=""> -->
+              <div class="project-show">
+                <h5>FitZone</h5>
+                <p>A react based web application which give user the access of over
+                    thousand of exercises along with animated gifs and tutorial video
+                    recommendation
+                </p>
+            <a href="https://fitness-app-d0996.web.app/">Visit Site →</a >
+              </div>
+            </div>
+            <!-- project-2 -->
+            <div class="projects" id="project-2">
+                <!-- <img src="./assets/eComImg.avif" alt=""> -->
+              <div class="project-show">
+                <h5>Amazon Ecommerce Clone</h5>
+                <p>User can login and buy
+                or add items to cart.Then proceed to the payment section.
+                </p>
+                    
+                    <a href="https://clone-challenge-65259.web.app/">Visit Site →</a>
+              </div>
+       
+            </div>
+    
+            <!-- project-3 -->
+            <div class="projects" id="project-3">
+                <!-- <img src="./assets/hotstar2.png" alt=""> -->
+            <div class="project-show">
+                    <h5>Disney Clone</h5>
+                    <p>The Disney+Hotstar clone is a video streaming website that offers a wide selection of blockbuster movies and TV shows.
+                    Users can log in, bookmark their favorite shows and movies for easy access.
+                    </p>
+                
+                <a href="#">Visit Site →</a>
+            </div>
+            </div>
+        </div>
+    </section>
+<!-- skills section -->
+<section id="skills-container">
+<div class="skill-heading">
+    <h1>skills</h1>
+</div>
+
+<div class="skill-content">
+
+    <div class="skill-left">
+<div class="skill-row-1">
+    <div class="skill-individual">
+        <p>HTML</p>
+        <img src="./assets/htmlImg.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>CSS</p>
+        <img src="./assets/cssImg.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>JS</p>
+        <img src="./assets/JSImg.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>ReactJS</p>
+        <img src="./assets/ReactImg.webp" alt="">
+    </div>
+
+    <div class="skill-individual">
+        <p>NodeJS</p>
+        <img src="./assets/nodeJs.svg" alt="">
+    </div>
+</div>
+
+<div class="skill-row-2">
+    
+    <div class="skill-individual">
+        <p>ExpressJS</p>
+        <img src="./assets/expressJs.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>MongoDB</p>
+        <img src="./assets/mongoDbImg.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>SQL</p>
+        <img src="./assets/swlImg.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>Firebase</p>
+        <img src="./assets/firebaseImg.png" alt="">
+    </div>
+    <div class="skill-individual">
+        <p>Git | Github</p>
+        <img src="./assets/githubImg.png" alt="">
+    </div>
+</div>
+<!-- <div class="skill-individual">
+    <p>HTML</p>
+    <img src="./assets/ReactImg.webp" alt="">
+</div>
+<div class="skill-individual">
+    <p>HTML</p>
+    <img src="./assets/htmlImg.png" alt="">
+</div> -->
+    </div>
+    <!-- <div class="skill-left">
+        
+        <div class="skill-left-1">
+            <div id="skill-spinner"></div>
+        </div>
+        <div class="skill-left-2"></div>
+    </div> -->
+    <!-- <div class="skill-right">
+<div class="">
+    <h3>Languages</h3>
+  <div class="languages">
+    <span>JavaScript</span>
+    <span>C++</span>
+    <span>C</span>
+  </div>
+</div>
+<div class="">
+    <h3>Front-end</h3>
+   <div class="front-end">
+    <span>React.Js</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Redux</span>
+    <span>GSAP ANIMATION</span>
+    <span>Tailwind CSS</span>
+   </div>
+</div>
+<div class="">
+    <h3>Back-end</h3>
+    <div class="back-end">
+        <span>Node.JS</span>
+        <span>Express.Js</span>
+        <span>MongoDb</span>
+        <span>API's</span>
+    </div>
+</div>
+    </div> -->
+</div>
+
+
+</section>
+    <!-- contact me -->
+    <section id="contact-parent">
+        <div class="contact-heading">
+            <h3>contact me</h3>
+            <h1>Feel Free To Reach Out !</h1>
+        </div>
+        <div class="contact-box">
+            <!-- contact phn email -->
+            <div class="contact-content" id="contact-info">
+                <h1>Contact Information</h1>
+                <p>If this website created a wonderful experience for you and left a lasting impression I would love to hear from you !</p>
+                <p>+91-8468096776</p>
+                <p>lalitbhagwasia008@gmail.com</p>
+            </div>
+            <!-- resume box -->
+            <div class="contact-content" id="contact-resume">
+                <h1>Resume</h1>
+                <p>And if you like what you see, feel free to check out my resume for more information in the link below !</p>
+                <a href="./assets/LalitKumarResume12_2023.pdf" download="">Download Here ↓</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <a href="https://github.com/Lalitkumar008">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lalit-kumar-09b807193/"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+        integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="index.js"></script>
+</body>
+</html>
