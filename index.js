@@ -114,12 +114,12 @@ let cross_menu = document.querySelector(".cross-menu");
 hemburger.addEventListener("click", () => {
   if (sidebar.style.display == "none") sidebar.style.display = "flex";
   else sidebar.style.display = "flex";
-  console.log("add", ul.classList);
 });
 
 cross_menu.addEventListener("click", () => {
   sidebar.style.display = "none";
 });
+
 // hemburger.removeEventListener("click", () => {
 //   ul.classList.remove = "nav-elements-ul";
 //   console.log("remove", ul.classList);
