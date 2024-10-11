@@ -12,6 +12,7 @@
 }
 
 body{
+    overflow-x: hidden;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color: var(--bgcolor);
 /* background-color: var(--bgcolor2); */
@@ -363,7 +364,8 @@ align-items: center;
     /* padding: 30px 10px; */
 
     /* background-color: #1a334882; */
-    background-color: #151d28;
+    /* background-color: #151d28; */
+    background-color: pink;
  
     background-size: cover;
  
@@ -424,12 +426,12 @@ padding: 7px 20px;
     background-color: var(--textcolor);
 }
 #project-1{
-background: url(./assets/exercise2.png);
+background: url(./assets/Black\ White\ and\ Yellow\ Bold\ Fitness\ Logo.png);
     background-position: left;
         background-size: cover;
 }
 #project-2{
-background: url(./assets/eComImg2.png);
+background: url(./assets/cryptoPulse\ icon.jpg);
     background-position: center;
         background-size: cover;
 }
